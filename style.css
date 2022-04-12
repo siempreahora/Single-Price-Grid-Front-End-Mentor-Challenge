@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Karla", sans-serif;
+  color: hsl(204, 43%, 93%);
+}
+
+/* ************************************************** */
+/* RE-USABLE */
+/* ************************************************** */
+
+.sync-padding {
+  padding: 2rem 2.7rem;
+}
+
+.margin-b-1rem {
+  margin-bottom: 1rem;
+}
+
+.font-size-sm {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.font-size-md {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* ************************************************** */
+/* CONTAINERS */
+/* ************************************************** */
+
+.container {
+  width: 35%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+
+  box-shadow: 0 0 12px 2px hsl(204, 43%, 93%);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+}
+
+/* Top container */
+.cont-1 {
+  grid-column: 1 / 3;
+}
+
+/* Bottom-Left container */
+.cont-2 {
+  background-color: hsl(179, 62%, 43%);
+  width: 100%;
+  border-bottom-left-radius: 8px;
+}
+
+/* Bottom-Right container */
+.cont-3 {
+  background-color: hsl(179, 70%, 43%);
+  border-bottom-right-radius: 8px;
+}
+
+/* ************************************************** */
+/* CONTAINER 1 (TOP) */
+/* ************************************************** */
+
+.cont-1-primary {
+  color: hsl(179, 62%, 43%);
+  margin: 0.5rem 0 1.5rem;
+}
+
+.cont-1-secondary {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 0.6rem;
+}
+
+.cont-1-desc {
+  color: hsl(218, 22%, 67%);
+  margin-bottom: 1rem;
+}
+
+/* ************************************************** */
+/* CONTAINER 2 (LEFT) */
+/* ************************************************** */
+
+.price-plan {
+  display: flex;
+  align-items: center;
+}
+
+.monthly-price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.per-month {
+  color: hsla(203, 44%, 93%, 0.623);
+  margin-left: 0.8rem;
+}
+
+.full-access-text {
+  margin: 0.5rem 0 2rem;
+}
+
+.cta-btn {
+  color: hsl(204, 43%, 93%);
+  background-color: hsl(71, 73%, 54%);
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  padding: 16px;
+  font-weight: 700;
+  font-size: 0.9rem;
+
+  box-shadow: 0 6px 10px 4px hsla(179, 62%, 35%, 0.603);
+  transition: all 0.4s;
+}
+
+.cta-btn:hover {
+  background-color: hsl(71, 56%, 48%);
+}
+
+/* ************************************************** */
+/* CONTAINER 3 (RIGHT) */
+/* ************************************************** */
+
+.cont-3 li {
+  list-style: none;
+  padding: 0.1rem;
+  font-size: 0.85rem;
+}
+
+/* ************************************************** */
+/* FRONT-END MENTOR STUFF */
+/* ************************************************** */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: black;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
